@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="align-content: center;">
+    <div class="topo">
+        <h1>Cadastro de usuário</h1>
+    </div>
+    <div class="formulario">
+        <form style="align-content: center;">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" required><br><br>
+            <label for="area">Área do terreno em m²:</label>
+            <input type="number" name="area" id="area" required><br><br>
+
+            <label for="servico">Tipo de serviço</label>
+            <input list="servico"><br><br>
+            <datalist id="servico"><br><br>
+                <option value="Poda">Poda</option>
+                <option value="Plantio">Plantio</option>
+                <option value="Manutencao">Manutenção Completa</option>
+            </datalist>
+
+            <label for="mensal" id="mensal">Deseja manutenção mensal?</label><br>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="sim">
+                <label class="form-check-label" for="sim">
+                  Sim
+                </label>
+              </div>
+              <br>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="nao">
+                <label class="form-check-label" for="nao">
+                  Não
+                </label>
+              </div>
+
+            <input type="submit" value="Calcular orçamento">
+        </form>
+        <input type="button" value="Exibir orçamento" id="btResultado">
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
